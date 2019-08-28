@@ -1,0 +1,129 @@
+#filterpro .option_box {
+display: inline-block;
+margin: 0px 5px 0px 5px;
+min-width: 225px;
+vertical-align: top;
+color:#333;
+}
+#filterpro input[type='text'], input[type='password'], textarea {
+background: transparent;
+margin-left: 0px;
+margin-right: 0px;
+text-align:center;
+}
+#filterpro .price_limit {
+border: 0;
+color: #444;
+font-weight: bold;
+width: 100%;
+margin-left: 8px;
+}
+
+#filterpro .ui-widget-header {
+    background: none repeat scroll 0 0 #3498db;
+    border: 0 none;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+#filterpro select {
+    width: 126px;
+}
+
+#filterpro .ui-state-hover, #filterpro .ui-state-focus, #filterpro .ui-state-active {
+border:none;
+outline:none;
+}
+
+#filterpro .price_slider {
+    padding: 6px 14px 8px 14px;
+	margin-bottom: 10px;
+}
+
+#filterpro .price_slider  input {
+    width: 40px;
+	
+}
+#filterpro .price_slider  input#min_price {
+margin-right: 20px;
+margin-left: 10px;
+}
+#filterpro .price_slider  input#max_price {
+margin-left: 20px;
+}
+#filterpro .option_values {
+    padding-top: 5px;
+}
+
+#filterpro .option_name, #filterpro .attribute_group_name {
+    background: url("../image/filter-bullet-down.png") no-repeat scroll right center transparent;
+    cursor: pointer;
+    padding: 5px;
+	font-weight:bold;
+	border-bottom: 1px solid #ccc;
+	color:#333;
+}
+#filterpro .attribute_group_name{
+    padding-left: 0;
+}
+
+#filterpro .hided {
+    background: url("../image/filter-bullet-up.png") no-repeat scroll right center transparent;
+    cursor: pointer;
+}
+
+#filterpro_box .clear_filter {
+    border-bottom: 1px dashed;
+    text-decoration: none;
+    float: right;
+	font-size: 12px;
+	font-weight: normal;
+}
+
+#filterpro .collapsible{
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+#filterpro img {
+    cursor: pointer;
+    margin: 2px
+}
+
+#filterpro img.selected {
+    border: 2px solid;
+    margin: 0;
+}
+#column-left + #column-right + #content .product-grid > div.loadmask {
+    width: 100%;
+}
+
+#filterpro input {
+    margin: 4px 3px;
+}
+#filterpro table{
+     margin-bottom: 5px;
+}
+[id^="attribute_label_"],[id*=" attribute_label_"] {
+float: right;
+padding-right: 25px;
+}
+#filterpro ::-webkit-scrollbar{
+    width:12px;
+}
+#filterpro ::-webkit-scrollbar-thumb{
+    border-width:1px 1px 1px 2px;
+    border-color: #ccc;
+    background-color: #ccc;
+}
+#filterpro ::-webkit-scrollbar-thumb:hover{
+    border-width: 1px 1px 1px 2px;
+    border-color: #ccc;
+    background-color: #aaa;
+}
+#filterpro ::-webkit-scrollbar-track{
+    border-width:0;
+	background-color: #eee;
+}
+#filterpro ::-webkit-scrollbar-track:hover{
+    background-color: #eee;
+}
