@@ -1,0 +1,45 @@
+<?php echo $header; ?><?php echo $column_left; ?><?php echo $column_right; ?>
+<div id="content"><?php echo $content_top; ?>
+<style type = "text/css">
+body{overflow:scroll}
+h1 span{color:#f00;display:block;font-size:.475em;font-weight:normal;letter-spacing:0;line-height:1em}
+h1{font-size:3.3em;font-weight:bold;letter-spacing:-.05em;line-height:1em}
+p.error-desc{font-size:1.1755em;color:#333;padding:1.4em 0}
+
+.content{padding-bottom:0}
+.header-phones-search{padding-top:2.5em}
+.error404-container{width:55.859em;margin:0 auto;padding:5em 0 1.5em 275px;text-align:left}
+</style>
+  <div class="breadcrumb">
+    <?php foreach ($breadcrumbs as $breadcrumb) { ?>
+    <?php echo $breadcrumb['separator']; ?><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
+    <?php } ?>
+  </div>
+
+<div class="error404-container" style="width:55.859em;margin:0 auto;padding:5em 0 1.5em 275px;text-align:left;">
+  <h1 style ="font-size:3.3em;font-weight:bold;letter-spacing:-.05em;line-height:1em;"><span style ="color:#f00;display:block;font-size:.475em;font-weight:normal;letter-spacing:0;line-height:1em;">Ошибка 404 </span>Страница не найдена</h1>
+<p class="error-desc" style = "font-size:1.1755em;color:#333;padding:1.4em 0;">
+Возможно, эта страница была удалена или
+<br>
+допущена ошибка в адресе.
+</p>
+<div id="search">
+    
+    <input type="text" name="search404" placeholder="Поиск товаров.." value="<?php if (isset ($search)) echo $search; ?>" STYLE=" height: 24px;  margin-left: 0;  margin-right: 0;    padding: 3px;  width: 386px;"/><div class="button-search404" ><p style="cursor: pointer;
+color: #FFFFFF;
+line-height: 12px;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 15px;
+background: #3498db;
+-webkit-border-radius: 4px 4px 4px 4px;
+-moz-border-radius: 4px 4px 4px 4px;
+-khtml-border-radius: 4px 4px 4px 4px;
+border-radius: 4px 4px 4px 4px; height: 12px; padding: 0 15px; border: 0 none; margin: 10px 0 0;
+    padding: 9px;
+    width: 45px;" >Найти</p></div>
+    </div>
+
+  </div>
+  
+  <?php echo $content_bottom; ?></div>
+<?php echo $footer; ?>
